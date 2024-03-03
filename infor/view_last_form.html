@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Last Submitted Form</title>
+    <style>
+        /* Center the form on the page */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #a9dce3;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the form container */
+form {
+  background-color: #7689de;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  width: 100%;
+  
+}
+
+/* Style the form header */
+h1 {
+   text-align: center;   
+  color: #0f0f0f;
+  margin-bottom: auto;
+}
+
+/* Style the form labels */
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Style the form input fields */
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the form submit button */
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style the form submit button on hover */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Style the form submit button on focus */
+input[type="submit"]:focus {
+  outline: none;
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>View Last Submitted Form</h1>
+    <form action="view_last_form.php" method="GET">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <input type="submit" value="View Last Form">
+    </form>
+</body>
+</html>

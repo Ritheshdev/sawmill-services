@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <header class="header">
+ 
+ <nav class="navbar">
+    <ul class="navbar-items">
+     <li><label class="navbar-items">NIRMALA&ensp;e-Shop<span>.</span></label></li>
+    <li><a href="../home.php">home</a></li>
+    <li><a href="../shop.php">shop</a></li>
+    <li><a href="../orders.php">orders</a></li>
+  <li><a href="../about.php">about</a></li>
+<li><a href="../contact.php">contact</a></li>
+<li><a href="../index.php">service</a></li>
+<li><a href="in1.html">customise</a></li>
+
+ </nav>
+ </div>
+  </header>
+
+    <title>Service Request Form</title>
+    <style>
+body {
+  font-family: "Arial", sans-serif;
+  /* background-color: #12ce3b; */
+  background-image: url("costume.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Navbar styles */
+.navbar {
+  background-color:#333;/* Set the background color */
+  padding:10px; /* Add some padding */
+  display: flex;
+  justify-content: center;
+}
+
+/* Navbar item styles */
+.navbar-items {
+  list-style-type: none; /* Remove the default list style */
+  margin: 0; /* Remove any default margin */
+  padding: 0px; /* Remove any default padding */
+  
+}
+
+.navbar-items li {
+  display: inline-block; /* Display the list items horizontally */
+  margin-right: 10px; /* Add some space between the list items */
+  
+}
+
+.navbar-items li a {
+  color: #fff; /* Set the link color */
+  text-decoration: none; /* Remove the default underline */
+  padding: 5px; /* Add some padding to the links */
+}
+.navbar-items li label {
+  color: #fff; /* Set the link color */
+  text-decoration: none; /* Remove the default underline */
+  padding: 5px; /* Add some padding to the links */
+}
+
+.navbar-items li a:hover {
+  background-color: #0ae715; /* Change the background color on hover */
+}
+
+
+h1 {
+  text-align: center;
+  color:#fff;
+  margin-top: 50px;
+  font-size: 32px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color:#fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color:#333;
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color:#f9f9f9;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #333;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type="file"] {
+  margin-top: 15px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #95f103;
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color:blue;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #333;
+}
+    </style>
+</head>
+<body>
+    <h1>Nirmala Saw Mill</h1>
+    <form action="process.php" method="post" class="box" enctype="multipart/form-data">
+        
+        <label for="service">Type of Service:</label>
+        <select id="service" name="service" required>
+            <option value="">Select Service</option>
+            <option value="door">Door</option>
+            <option value="table">Table</option>
+            <option value="chair">Chair</option>
+        </select>
+
+        <label for="height">Height:</label>
+        <input type="text" id="height" name="height" required>
+
+        <label for="width">Width:</label>
+        <input type="text" id="width" name="width" required>
+        <label for="wood">Type of wood:</label>
+        <select id="wood" name="wood" required>
+            <option value="">Select Wood</option>
+            <option value="rosewood">Rosewood</option>
+            <option value="teak">Teak</option>
+            <option value="oak">Oak</option>
+            <option value="mahgoni">Mahagoni</option>
+        </select>
+        <label for="photo">Upload Photo:</label>
+        <input type="file" id="photo" name="photo" required>
+
+        <input type="submit" value="Submit">
+
+        <a href="view_last_form.php">View Submitted Forms</a>
+    </form>
+</body>
+</html>
